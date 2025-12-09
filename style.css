@@ -30,7 +30,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px var(--shadow-color);
     position: sticky;
     top: 0;
@@ -105,7 +107,7 @@ nav a.active {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Setup Antigravity Animation */
+
 @keyframes float {
     0% {
         transform: translateY(0px);
@@ -142,7 +144,7 @@ nav a.active {
     animation: float-gentle 4s ease-in-out infinite;
 }
 
-/* Hero Section */
+
 .hero {
     display: flex;
     align-items: center;
@@ -193,7 +195,7 @@ nav a.active {
     filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
 }
 
-/* Background Doodles (Abstract shapes) */
+
 .doodle {
     position: absolute;
     opacity: 0.1;
@@ -219,7 +221,7 @@ nav a.active {
     width: 80px;
 }
 
-/* Product Grid */
+
 .products-section {
     padding: 4rem 5%;
 }
@@ -306,7 +308,7 @@ nav a.active {
     display: block;
 }
 
-/* Footer */
+
 footer {
     background-color: #f0f0f0;
     padding: 4rem 5% 2rem;
@@ -336,7 +338,7 @@ footer {
     color: var(--primary-green);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .hero {
         flex-direction: column-reverse;
@@ -380,7 +382,7 @@ footer {
     }
 }
 
-/* Cart Nav Item */
+
 .cart-icon {
     position: relative;
     font-size: 1.2rem;
@@ -402,7 +404,7 @@ footer {
     font-weight: bold;
 }
 
-/* Cart Page Styles */
+
 .cart-page {
     padding: 4rem 5%;
 }
@@ -469,7 +471,7 @@ footer {
     color: var(--primary-green);
 }
 
-/* Checkout Page */
+
 .checkout-page {
     padding: 4rem 5%;
 }
