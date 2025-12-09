@@ -30,6 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Search Functionality
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const productCards = document.querySelectorAll('.product-card');
+            
+            productCards.forEach(card => {
+                const productName = card.querySelector('.product-name').textContent.toLowerCase();
+                card.style.display = productName.includes(searchTerm) ? 'block' : 'none';
+            });
+        });
+    }
+
     // --- Cart Logic ---
     // Currency conversion settings
     const USD_TO_INR = 83.5;
