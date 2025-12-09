@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Freshy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-hero {
+            text-align: center;
+            padding: 4rem 5%;
+            background: linear-gradient(to bottom, white, var(--light-bg));
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            padding: 4rem 5%;
+            gap: 4rem;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-img {
+            flex: 1;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .feature-box {
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+        }
+
+        @media(max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span><i class="fas fa-phone"></i> +91 94457 68780</span>
+        <span><i class="fas fa-map-marker-alt"></i> freshy shop Near ukadam bus stand ,kootamedu</span>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fas fa-leaf"></i> Freshy <span>.</span>
+        </a>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="best-deals.html">Best Deals</a></li>
+                <li><a href="app.html">App</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-hero">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">We Bring Nature to <br> Your Doorstep</h1>
+        <p style="color: #666; max-width: 600px; margin: 0 auto;">Freshy is dedicated to providing the freshest,
+            organic, and locally sourced groceries to families across the city.</p>
+    </div>
+
+    <section class="about-content">
+        <div class="about-img floating-gentle">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="About Freshy" style="width: 100%; display: block;">
+        </div>
+        <div class="about-text">
+            <span style="color: var(--accent-orange); font-weight: bold; text-transform: uppercase;">Our Story</span>
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Freshness You Can Trust</h2>
+            <p style="margin-bottom: 1.5rem; color: #555;">Founded in 2020, Freshy started with a simple mission: make
+                healthy food accessible to everyone. We partner directly with local farmers to ensure that every
+                vegetable and fruit you receive is as fresh as if you picked it yourself.</p>
+            <p style="margin-bottom: 1.5rem; color: #555;">Our delivery system ensures that delicate items
+                like eggs and soft fruits are handled with extreme care, arriving in perfect condition.</p>
+            <a href="shop.html" class="btn btn-primary">Start Shopping</a>
+        </div>
+    </section>
+
+    <section class="features-grid">
+        <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+            <h3>Fast Delivery</h3>
+            <p>Get your groceries delivered in under 30 minutes with our express service.</p>
+        </div>
+        <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+            <h3>100% Organic</h3>
+            <p>We guarantee that all our produce is 100% organic and pesticide-free.</p>
+        </div>
+        <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-headset"></i></div>
+            <h3>24/7 Support</h3>
+            <p>Our customer support team is always available to help you with your orders.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Freshy.</h3>
+                <p>Fresh groceries for your family.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="list-style:none; line-height:2;">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <p>Subscribe for updates</p>
+                <input type="email" placeholder="Your Email"
+                    style="padding: 0.5rem; border:1px solid #ddd; border-radius: 5px; width: 100%;">
+            </div>
+        </div>
+        <div style="text-align: center; margin-top:2rem; padding-top:2rem; border-top:1px solid #ddd;">
+            <p>&copy; 2025 Freshy Grocery Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

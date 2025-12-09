@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the App - Freshy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .app-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 5%;
+            gap: 4rem;
+        }
+
+        .app-text {
+            max-width: 500px;
+        }
+
+        .app-mockup {
+            max-width: 300px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            border: 8px solid #333;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .app-btn {
+            background: #333;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .app-btn:hover {
+            transform: translateY(-5px);
+        }
+
+        @media(max-width: 768px) {
+            .app-section {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .download-buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span><i class="fas fa-phone"></i> +91 9445768780</span>
+        <span><i class="fas fa-map-marker-alt"></i> freshy shop Near ukadam bus stand ,kootamedu</span>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fas fa-leaf"></i> Freshy <span>.</span>
+        </a>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="best-deals.html">Best Deals</a></li>
+                <li><a href="app.html" class="active">App</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="app-section">
+        <div class="app-text">
+            <span style="color: var(--primary-green); font-weight: bold; text-transform: uppercase;">Mobile App</span>
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Shop Anywhere, <br> Anytime.</h1>
+            <p style="color: #666; margin-bottom: 2rem;">Download our mobile app to get exclusive deals, track your
+                orders in real-time, and enjoy seamless grocery shopping from the comfort of your home.</p>
+
+            <ul style="list-style: none; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li><i class="fas fa-check-circle" style="color: var(--primary-green);"></i> Real-time Order Tracking
+                </li>
+                <li><i class="fas fa-check-circle" style="color: var(--primary-green);"></i> Exclusive App-only
+                    Discounts</li>
+                <li><i class="fas fa-check-circle" style="color: var(--primary-green);"></i> Quick Re-order Feature</li>
+            </ul>
+
+            <div class="download-buttons">
+                <a href="#" class="app-btn">
+                    <i class="fab fa-apple" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <small style="display:block; font-size:0.7rem;">Download on the</small>
+                        <span style="font-weight:bold;">App Store</span>
+                    </div>
+                </a>
+                <a href="#" class="app-btn">
+                    <i class="fab fa-google-play" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <small style="display:block; font-size:0.7rem;">GET IT ON</small>
+                        <span style="font-weight:bold;">Google Play</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="app-image floating">
+            <!-- Placeholder for phone mockups -->
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+                alt="App Mockup" class="app-mockup">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Freshy.</h3>
+                <p>Fresh groceries for your family.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="list-style:none; line-height:2;">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <p>Subscribe for updates</p>
+                <input type="email" placeholder="Your Email"
+                    style="padding: 0.5rem; border:1px solid #ddd; border-radius: 5px; width: 100%;">
+            </div>
+        </div>
+        <div style="text-align: center; margin-top:2rem; padding-top:2rem; border-top:1px solid #ddd;">
+            <p>&copy; 2025 Freshy Grocery Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Freshy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 4rem;
+            padding: 4rem 5%;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: inherit;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-icon {
+            background: var(--primary-green);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span><i class="fas fa-phone"></i> +91 94457 68780</span>
+        <span><i class="fas fa-map-marker-alt"></i> freshy shop Near ukadam bus stand ,kootamedu</span>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fas fa-leaf"></i> Freshy <span>.</span>
+        </a>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="best-deals.html">Best Deals</a></li>
+                <li><a href="app.html">App</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1 class="section-title" style="text-align: left;">Get in Touch</h1>
+            <p style="margin-bottom: 2rem; color: #666;">Have questions about our products or services? Reach out to us
+                and we'll get back to you as soon as possible.</p>
+
+            <div class="contact-info-item">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                    <h3>Our Main Store</h3>
+                    <p>freshy shop Near ukadam bus stand ,kootamedu<br>
+                       pincode:642001</p>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <div>
+                    <h3>Phone Number</h3>
+                    <p>+91 94457 68780</p>
+                    <p>+91 93519 61712</p>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                    <h3>Email Address</h3>
+                    <p>hello@freshy.com</p>
+                    <p>support@freshy.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2 style="margin-bottom: 1.5rem;">Send Message</h2>
+            <form>
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Map Placeholder -->
+    <div style="padding: 0 5% 4rem;">
+        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+            alt="Map Location" style="width: 100%; height: 300px; object-fit: cover; border-radius: 20px;">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Freshy.</h3>
+                <p>Fresh groceries for your family.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="list-style:none; line-height:2;">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <p>Subscribe for updates</p>
+                <input type="email" placeholder="Your Email"
+                    style="padding: 0.5rem; border:1px solid #ddd; border-radius: 5px; width: 100%;">
+            </div>
+        </div>
+        <div style="text-align: center; margin-top:2rem; padding-top:2rem; border-top:1px solid #ddd;">
+            <p>&copy; 2025 Freshy Grocery Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

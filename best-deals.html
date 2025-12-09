@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Deals - Freshy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .banner-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            padding: 2rem 5%;
+        }
+
+        .banner {
+            background: var(--light-bg);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            border: 2px dashed var(--primary-green);
+        }
+
+        .banner-text h3 {
+            color: var(--primary-green);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .banner-tag {
+            background: var(--accent-orange);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .banner img {
+            width: 150px;
+            height: auto;
+        }
+
+        .price-cut {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span><i class="fas fa-phone"></i> +91 94457 68780</span>
+        <span><i class="fas fa-map-marker-alt"></i> freshy shop Near ukadam bus stand ,kootamedu</span>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fas fa-leaf"></i> Freshy <span>.</span>
+        </a>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="best-deals.html" class="active">Best Deals</a></li>
+                <li><a href="app.html">App</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner-grid">
+        <div class="banner floating-gentle">
+            <div class="banner-text">
+                <span class="banner-tag">50% OFF</span>
+                <h3>Fresh Fruits</h3>
+                <p>On all seasonal fruits</p>
+                <a href="#" class="btn btn-primary" style="margin-top:1rem;">Shop Now</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=60"
+                alt="">
+        </div>
+        <div class="banner floating-gentle" style="animation-delay: 1s;">
+            <div class="banner-text">
+                <span class="banner-tag" style="background-color: var(--primary-yellow); color: #333;">BOGO Free</span>
+                <h3>Veggie Mix</h3>
+                <p>Buy 1 Get 1 Free</p>
+                <a href="#" class="btn btn-primary" style="margin-top:1rem;">Shop Now</a>
+            </div>
+            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDQH4Z3a-4qaeSe4UmVSC93UqaNvS0_ldXg&s
+                alt="">
+        </div>
+    </div>
+
+    <section class="products-section">
+        <h2 class="section-title">Clearance Sale</h2>
+        <div class="product-grid">
+            <!-- Product 1 Deal -->
+            <div class="product-card">
+                <div
+                    style="position: absolute; top: 10px; right: 10px; background: red; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">
+                    -30%</div>
+                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRIkEgXQ6prN8duYfvZmQB11kyhAwe2S58A&s
+                    alt="Strawberries" class="product-img">
+                <h3 class="product-name">Strawberries</h3>
+                <span class="product-price"><span class="price-cut">$4.50</span> $3.15</span>
+                <button class="btn btn-primary add-cart-btn">Add to Cart</button>
+            </div>
+            <!-- Product 2 Deal -->
+            <div class="product-card">
+                <div
+                    style="position: absolute; top: 10px; right: 10px; background: red; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">
+                    -20%</div>
+                <img src=https://hsph.harvard.edu/wp-content/uploads/2024/06/Avocado_1200x800.jpg
+                    alt="Avocado" class="product-img">
+                <h3 class="product-name">Avocado</h3>
+                <span class="product-price"><span class="price-cut">$2.50</span> $2.00</span>
+                <button class="btn btn-primary add-cart-btn">Add to Cart</button>
+            </div>
+            <!-- Product 3 Deal -->
+            <div class="product-card">
+                <div
+                    style="position: absolute; top: 10px; right: 10px; background: red; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">
+                    -15%</div>
+                <img src=https://media.self.com/photos/5b6b0b0cbb7f036f7f5cbcfa/4:3/w_2560%2Cc_limit/apples.jpg
+                    alt="Apples" class="product-img">
+                <h3 class="product-name">Red Apples</h3>
+                <span class="product-price"><span class="price-cut">$2.99</span> $2.54</span>
+                <button class="btn btn-primary add-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Freshy.</h3>
+                <p>Fresh groceries for your family.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="list-style:none; line-height:2;">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <p>Subscribe for updates</p>
+                <input type="email" placeholder="Your Email"
+                    style="padding: 0.5rem; border:1px solid #ddd; border-radius: 5px; width: 100%;">
+            </div>
+        </div>
+        <div style="text-align: center; margin-top:2rem; padding-top:2rem; border-top:1px solid #ddd;">
+            <p>&copy; 2025 Freshy Grocery Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
